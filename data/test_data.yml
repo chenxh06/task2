@@ -1,0 +1,14 @@
+host: "http://gbpda.weather.gov.hk"
+
+test case:
+  test_humidity:
+    request:
+      method: GET
+      headers:
+        User-Agent: "locspc 6.1.9, UIDeviceType: iPhone12,1, systemVersion: 13.1.1"
+        Accept-Language: zh-cn
+        Accept-Encoding: gzip, deflate
+      url: "/locspc/data/fnd_uc.xml"
+    expected:
+      response:
+        code: 200
